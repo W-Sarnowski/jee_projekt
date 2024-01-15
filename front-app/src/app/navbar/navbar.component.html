@@ -1,3 +1,7 @@
-<mat-toolbar>
-    <a [routerLink]="['/home']">App</a>
+<mat-toolbar class="nav-bar">
+  <a [routerLink]="['/home']">App</a>
+  <div class="nav-bar-auth">
+    <a [routerLink]="['/login']">Login</a>
+    <a [routerLink]="['/register']">Register</a>
+  </div>
 </mat-toolbar>

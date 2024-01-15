@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+    .login-card {
+        min-width: 600px;
+        min-height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: gray;
+
+        .login-card-field {
+            width: 80%;
+        }
+
+        .login-card-button-submit {
+            max-width: 100px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+    .register-card {
+        min-width: 600px;
+        min-height: 1000px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: gray;
+
+        .register-card-field {
+            width: 80%;
+        }
+
+        .register-card-button-submit {
+            max-width: 100px;
+        }
+    }
+}

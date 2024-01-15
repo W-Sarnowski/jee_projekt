@@ -1,0 +1,10 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-bar-auth {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

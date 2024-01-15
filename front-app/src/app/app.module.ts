@@ -12,12 +12,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MaterialModule } from './material/material.module';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginPageComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +34,11 @@ import { MaterialModule } from './material/material.module';
     MatListModule,
     MatToolbarModule,
     MaterialModule,
+    HttpClientModule,
   ],
   providers: [
-    RouterOutlet
+    RouterOutlet,
+    HttpClient
   ],
   bootstrap: [AppComponent]
 })

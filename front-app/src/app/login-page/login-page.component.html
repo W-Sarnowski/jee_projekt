@@ -1,0 +1,16 @@
+<mat-card class="login-card">
+  <mat-form-field class="login-card-field">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Insert name here" [value]="login" />
+  </mat-form-field>
+  <mat-form-field class="login-card-field">
+    <mat-label>Password</mat-label>
+    <input
+      matInput
+      placeholder="Insert password here"
+      [value]="password"
+      type="password"
+    />
+  </mat-form-field>
+  <button mat-raised-button (click)="onLoginCLick()" class="login-card-button-submit">Login</button>
+</mat-card>

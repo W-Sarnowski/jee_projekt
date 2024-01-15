@@ -1,0 +1,62 @@
+<mat-card class="register-card">
+  <mat-form-field class="register-card-field">
+    <mat-label>E-mail</mat-label>
+    <input
+      matInput
+      placeholder="example@example.com"
+      type="email"
+      [value]="email"
+    />
+  </mat-form-field>
+  <mat-form-field class="register-card-field">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Insert name here" [value]="login" />
+  </mat-form-field>
+  <mat-form-field class="register-card-field">
+    <mat-label>Password</mat-label>
+    <input
+      matInput
+      placeholder="Insert password here"
+      [value]="password"
+      type="password"
+    />
+  </mat-form-field>
+  <mat-form-field class="register-card-field">
+    <mat-label>Repeat Password</mat-label>
+    <input
+      matInput
+      placeholder="Insert password again"
+      [value]="passwordCopy"
+      type="password"
+    />
+  </mat-form-field>
+  <div>
+    <input
+      type="file"
+      class="file-input"
+      (change)="onFileSelected($event)"
+      #fileUpload
+      style="display: none;"
+    />
+
+    <div class="file-upload">
+      {{ fileName || "Upload your avatar" }}
+
+      <button
+        mat-mini-fab
+        color="primary"
+        class="upload-btn"
+        (click)="fileUpload.click()"
+      >
+        <mat-icon>attach_file</mat-icon>
+      </button>
+    </div>
+  </div>
+  <button
+    mat-raised-button
+    (click)="onRegisterCLick()"
+    class="register-card-button-submit"
+  >
+    Register
+  </button>
+</mat-card>
